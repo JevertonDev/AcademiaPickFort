@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Academia Pick Fort</title>
+</head>
+<body>
+    
+    <header>
+        <h1>PICK FORTE</h1>
+        <p>Acredite em si mesmo, porque você é mais forte do que pensa. <br> Os resultados podem não aparecer de um dia para o outro,<br> mas estamos a caminho. Celebre cada pequena conquista,<br> cada gota de suor derramada e cada desafio superado. <br> E lembre-se de que você não está sozinho nessa jornada. <br> Há uma comunidade de pessoas dedicadas, prontas para te apoiar.</p>
+        <button id="openDialogButton">Matricule-se</button>
+<div id="overlay"></div>
+<div id="dialog">
+  <span class="close-button" onclick="closeDialog()">X</span> 
+  <h2>PICK FORTE</h2>
+  <form id="infoForm">
+    <label for="firstName">Nome:</label>
+    <input type="text" id="firstName" required>
+    <label for="lastName">Sobre Nome:</label>
+    <input type="text" id="lastName" required>
+    <label for="description">Descrição:</label>
+    <textarea id="description" required></textarea>
+    <button id="sendButton">Enviar</button>
+  </form>
+  <p id="warning">Por favor, preencha todos os campos do formulário.</p>
+</div>
+    </header>
+          <section>
+            <h2>NOSSOS DIFERENCIAIS</h2>
+            <div class="conteiner">
+                <div class="cards1">
+                    <img src="img/equipe.png" alt="equipe">
+                    <h3>EQUIPE QUALIFICADA</h3>
+                    <P>Profissionais altamente 
+                        capacitados e motivados a 
+                        ajudá-lo a alcançar seus 
+                        objetivos.</P>
+                </div>
+                <div class="cards2">
+                    <img src="img/motivação.png" alt="motivação">
+                    <h3>AMBIENTE MOTIVADOR</h3>
+                    <P>ambiente seguro e 
+                        inspirador para ajudá-lo a 
+                        manter-se motivado durante 
+                        seus treinos.</P>
+                </div>
+                <div class="cards3">
+                    <img src="img/equipamentos.png" alt="equipamentos">
+                    <h3>EQUIPAMENTOS</h3>
+                    <P>Mantemos nossos 
+                        equipamentos atualizados 
+                        para garantir a segurança e 
+                        eficiência de nossos clientes.</P>
+                </div>
+
+            </div>
+          </section>
+          <main>
+            <h2>NOSSOS PLANOS</h2>
+            <div class="container_valores">
+                <div class="cards4">
+                    <img src="img/mulher.jpg" alt="mulher">
+                    <h3>GRÁTIS 1 DIA</h3>
+                    <p>Teste gratuitamente</p>
+                </div>
+                <div class="cards4">
+                    <img src="img/mulher1ano.jpg" alt="mulher">
+                    <h3>PLANO MENSAL</h3>
+                    <p>R$70,00</p>
+                </div>
+                <div class="cards4">
+                    <img src="img/mulher_homem.jpg" alt="mulher">
+                    <h3>PLANO ANUAL</h3>
+                    <p>R$840,00</p>
+                </div> 
+            </div>
+          </main>
+          <section id="containerlocal">
+            <div class="local">
+                <div>
+                    <h2>FAÇA PARTE DA NOSSA FAMÍLIA</h2>
+                    <p>Nossa academia tem milhares de clientes satisfeitos com resultados surpreendentes. 
+                        Junte-se a nós e comece a transformar seu corpo agora!</p>
+                </div>
+            </div>
+          </section>
+          <footer>
+                <img src="img/mapa.png" alt="mapa">
+                <a target="_blank" href="https://www.google.com/maps/place/Academia+Pick+Forte/@-9.3666411,-37.253771,17z/data=!3m1!4b1!4m6!3m5!1s0x7061f7bd25ad9ef:0xde8fd43f940f650f!8m2!3d-9.3666411!4d-37.2511961!16s%2Fg%2F11f2wc4dnp?entry=ttu"><span>Av. Pancrácio Rocha, Santana do Ipanema - AL, 57500-000</span></a>
+          </footer>
+          <script>
+           // Função para abrir o diálogo
+  document.getElementById("openDialogButton").addEventListener("click", function() {
+    document.getElementById("dialog").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+  });
+
+  // Função para fechar o diálogo
+  function closeDialog() {
+    document.getElementById("dialog").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+  }
+   
+          </script>
+          
+</body>
+</html>
